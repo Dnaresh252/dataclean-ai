@@ -55,4 +55,5 @@ data/
 datasets/
 
 # Node modules
-node_modules/
+node_modules/"data/raw/*.csv" 
+"data/raw/*.xlsx" 
