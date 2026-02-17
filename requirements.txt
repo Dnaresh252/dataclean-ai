@@ -1,0 +1,48 @@
+# Core
+fastapi
+uvicorn[standard]
+python-multipart
+
+# Database
+sqlalchemy
+alembic
+psycopg2-binary
+
+# Authenticatio
+python-jose[cryptography]
+passlib[bcrypt]
+python-multipart
+
+# Background jobs
+celery
+redis
+
+# ML & Data Science
+scikit-learn
+xgboost
+pandas
+numpy
+onnx
+onnxruntime
+
+# File processin
+openpyxl
+xlrd
+python-docx
+reportlab
+
+# Utilities
+python-dotenv
+pydantic
+pydantic-settings
+
+# Testing
+pytest
+pytest-asyncio
+httpx
+
+# Monitoring
+sentry-sdk
+
+# Payment
+razorpay
