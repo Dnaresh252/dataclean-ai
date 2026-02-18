@@ -6,7 +6,7 @@ This is where our API starts.
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import logging
-
+from app.api.routes import clean, auth  # Add auth
 # Import routes (FIXED PATH)
 from app.api.routes import clean
 
@@ -35,7 +35,7 @@ app.add_middleware(
 
 # Include routers
 app.include_router(clean.router, prefix="/api/v1", tags=["cleaning"])
-
+app.include_router(auth.router, prefix="/api/v1/auth", tags=["authentication"]) 
 @app.get("/")
 def read_root():
     """
